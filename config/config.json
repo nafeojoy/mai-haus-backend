@@ -1,0 +1,5 @@
+{
+    "ENV": "development",
+    "MaiHausConnectionString": "postgres://nafeo:nafio@localhost:5432/mai_haus",
+    "PostGreConnectionString": "postgres://uqxiughy:fXeE2G80x02kXsSQDoBnoQxuJcAo784j@satao.db.elephantsql.com:5432/uqxiughy"
+}
