@@ -3,7 +3,6 @@ import jwt from 'jsonwebtoken';
 require("dotenv").config();
 
 //this middleware will on continue on if the token is inside the local storage
-
 module.exports = function(req, res, next) {
   // Get token from header
   const token = req.header("jwt_token");
@@ -15,7 +14,6 @@ module.exports = function(req, res, next) {
 
   // Verify token
   try {
-    //it is going to give use the user id (user:{id: user.id})
     const verify = jwt.verify(token, process.env.jwtSecret);
     console.log(verify)
     req.user = verify.user;

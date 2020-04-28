@@ -4,6 +4,7 @@
 //Authentication Api
 import GameRoutes from './routes/game.router.js'
 import DashboardRoutes from './routes/authRoutes/dashboard.router'
+import FileUploadRoutes from './routes/authRoutes/fileUpload.router'
 import jwtAuthRoutes from './routes/jwtAuth'
 
 
@@ -50,7 +51,6 @@ export default (app, router, client) => {
     }
   }
 
-  app.use(cors())
 
   // For mobile app api
   app.use(function (req, res, next) {
@@ -79,6 +79,7 @@ export default (app, router, client) => {
   GameRoutes(app, router, client, logger);
   jwtAuthRoutes(app, router, client, authorize, validInfo);
   DashboardRoutes(app, router, client, logger, authorize);
+  FileUploadRoutes(app, router, client, logger, authorize);
 
 
 

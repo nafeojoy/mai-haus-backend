@@ -9,7 +9,7 @@ import pm2 from 'pm2';
 
 gulp.task('serve', function (done) {
   nodemon({
-    script: 'server.js'
+    script: 'server/server.js'
   , ext: 'js html'
   , env: { 'NODE_ENV': 'development' }
   , done: done
