@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 require("dotenv").config();
 
 //this middleware will on continue on if the token is inside the local storage
-module.exports = function(req, res, next) {
+export default (req, res, next) => {
   // Get token from header
   const token = req.header("jwt_token");
 

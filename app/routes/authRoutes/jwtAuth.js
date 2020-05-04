@@ -1,5 +1,5 @@
 const bcrypt = require("bcrypt");
-import jwtGenerator from "../utlis/jwtGenerator";
+import jwtGenerator from "../../utlis/jwtGenerator";
 
 export default(app, router, client, authorize, validInfo) => {
 

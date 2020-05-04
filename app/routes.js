@@ -2,18 +2,15 @@
 // Define routes for the Node backend
 
 //Authentication Api
-import GameRoutes from './routes/game.router.js'
+import GameRoutes from './routes/publicRoutes/game.router'
 import DashboardRoutes from './routes/authRoutes/dashboard.router'
 import FileUploadRoutes from './routes/authRoutes/fileUpload.router'
-import jwtAuthRoutes from './routes/jwtAuth'
-
-
-import cors from 'cors';
+import jwtAuthRoutes from './routes/authRoutes/jwtAuth'
 import useragent from 'express-useragent';
 import log4js from 'log4js';
 
-import authorize from "./../app/middleware/authorize";
-import validInfo from "./middleware/validInfo";
+import authorize from "./services/middleware/authorize";
+import validInfo from "./services/middleware/validInfo";
 
 
 export default (app, router, client) => {
