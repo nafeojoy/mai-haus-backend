@@ -42,7 +42,7 @@
         "request-ip": "*",
         "request-promise": "*",
         "shortid": "2.2.6",
-        "socket.io": "1.4.6",
+        "socket.io": "2.4.0",
         "speakingurl": "11.0.0",
         "url": "0.11.0",
         "useragent": "2.2.1",
